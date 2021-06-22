@@ -938,7 +938,7 @@
     // with its orientation once append it into DOM
 
     if (!IS_SAFARI) {
-      newImage.style.cssText = 'left:0;' + 'max-height:none!important;' + 'max-width:none!important;' + 'min-height:0!important;' + 'min-width:0!important;' + 'opacity:0;' + 'position:absolute;' + 'top:0;' + 'z-index:-1;';
+      newImage.style.cssText = 'left:0;' + 'max-height:none!important;' + 'max-width:none!important;' + 'min-height:0!important;' + 'min-width:0!important;' + 'opacity:0;' + 'position:relative;' + 'top:0;' + 'z-index:-1;';
       body.appendChild(newImage);
     }
 
@@ -1461,7 +1461,7 @@
         removeClass(this.canvas, CLASS_LOADING);
       }
 
-      image.style.cssText = 'height:0;' + "margin-left:".concat(viewerData.width / 2, "px;") + "margin-top:".concat(viewerData.height / 2, "px;") + 'max-width:none!important;' + 'position:absolute;' + 'width:0;';
+      image.style.cssText = 'height:0;' + "margin-left:".concat(viewerData.width / 2, "px;") + "margin-top:".concat(viewerData.height / 2, "px;") + 'max-width:none!important;' + 'position:relative;' + 'width:0;';
       this.initImage(function () {
         toggleClass(image, CLASS_MOVE, options.movable);
         toggleClass(image, CLASS_TRANSITION, options.transition);
